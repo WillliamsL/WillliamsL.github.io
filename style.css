@@ -52,8 +52,14 @@ header {
     z-index: 1;
 }
 
+.header-content {
+    margin-bottom: 50px; /* Ajoutez de la marge en bas du titre */
+}
+
+
 header h1 {
     margin: 0;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -91,15 +97,14 @@ section h2 {
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 1rem; /* Espace entre les éléments */
 }
 
 .project-item {
     background: rgba(255, 255, 255, 0.1);
-    width: calc(50% - 1rem); /* Pour deux colonnes avec un espace entre */
-    margin-bottom: 1rem;
+    height: 150px;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -107,7 +112,7 @@ section h2 {
 }
 
 @media (max-width: 768px) {
-    .project-item {
-        width: calc(100% - 2rem); /* Pour une seule colonne sur les écrans plus petits */
+    .projects {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
     }
 }
