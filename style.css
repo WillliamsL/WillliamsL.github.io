@@ -48,28 +48,13 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: relative;
     z-index: 1;
 }
 
-<<<<<<<< HEAD:style-home.css
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-========
 .header-content {
-    margin-bottom: 50px; /* Ajoutez de la marge en bas du titre */
+    margin-bottom: 20px; /* Ajoutez de la marge en bas du titre */
 }
-
 
 header h1 {
     margin: 0;
@@ -83,7 +68,6 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
->>>>>>>> 2ab50a74364c937084f2816ecb3f9fdb21dd06d4:style.css
 }
 
 nav ul li a {
@@ -92,40 +76,6 @@ nav ul li a {
     transition: color 0.3s ease; /* Transition fluide pour les liens */
 }
 
-<<<<<<<< HEAD:style-home.css
-.main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    padding-top: 5rem; /* to avoid header overlap */
-}
-
-.title-box {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-.title-box h1 {
-    margin: 0;
-}
-
-.title-box p {
-    margin-top: 1rem;
-}
-
-footer {
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 1;
-========
 nav ul li a:hover {
     color: #ffc107; /* Couleur au survol */
 }
@@ -164,5 +114,4 @@ section h2 {
     .projects {
         grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
     }
->>>>>>>> 2ab50a74364c937084f2816ecb3f9fdb21dd06d4:style.css
 }
