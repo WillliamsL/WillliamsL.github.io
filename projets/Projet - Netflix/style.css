@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.header {
+    background-color: #141414;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    z-index: 10; /* Assure que l'en-tête reste au-dessus de l'image de fond */
+    position: relative; /* Nécessaire pour le z-index */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: 20px; /* Espace entre le logo et la nav */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.nav-right-btns {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Aligne les boutons à droite */
+}
+
+.nav-right-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.hero {
+    background-image: url('./real-steel.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: -80px; /* Ajuste cette valeur en fonction de la hauteur de l'en-tête */
+    min-height: calc(100vh + 80px); /* Ajuste cette valeur en fonction de la hauteur de l'en-tête */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.get-started-btn {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer {
+    background-color: #141414;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    display: inline;
+    margin: 0 10px;
+}

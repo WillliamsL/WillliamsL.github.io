@@ -1,0 +1,259 @@
+/* Basic reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, nav, footer, header, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {/* Réinitialise les marges et les paddings par défaut des éléments pour une présentation cohérente */
+    body, h1, h2, h3, h4, h5, h6, p, ul, li, nav, footer, header, main, div, a, button, input {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Styles généraux pour le corps de la page */
+    body {
+        font-family: Arial, sans-serif; /* Définit la police par défaut */
+        display: flex; /* Utilise le modèle flexbox */
+        flex-direction: column; /* Dispose les éléments en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        justify-content: center; /* Centre les éléments verticalement */
+        min-height: 100vh; /* Hauteur minimale de la page */
+        background-color: #f2f2f2; /* Couleur de fond de la page */
+    }
+    
+    /* Styles pour l'en-tête */
+    header {
+        width: 100%; /* Prend toute la largeur de la page */
+        padding: 10px 0; /* Ajoute du padding en haut et en bas */
+        background-color: #fff; /* Couleur de fond blanche */
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    }
+    
+    /* Styles pour la liste de navigation */
+    nav ul {
+        display: flex; /* Utilise flexbox pour les éléments de la liste */
+        justify-content: flex-end; /* Aligne les éléments à droite */
+        list-style: none; /* Supprime les puces de la liste */
+        margin-right: 20px; /* Ajoute une marge à droite */
+    }
+    
+    /* Styles pour chaque élément de la liste */
+    nav ul li {
+        margin-left: 20px; /* Ajoute une marge à gauche de chaque élément */
+    }
+    
+    /* Styles pour les liens de navigation */
+    nav ul li a {
+        text-decoration: none; /* Supprime le soulignement des liens */
+        color: #5f6368; /* Couleur du texte */
+        font-size: 14px; /* Taille de la police */
+    }
+    
+    /* Styles pour la section principale */
+    main {
+        display: flex; /* Utilise flexbox */
+        flex-direction: column; /* Dispose les éléments en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        justify-content: center; /* Centre les éléments verticalement */
+        flex-grow: 1; /* Permet à la section principale de s'agrandir pour remplir l'espace disponible */
+        text-align: center; /* Centre le texte */
+    }
+    
+    /* Styles pour le conteneur du logo */
+    .logo-container {
+        margin-top: 50px; /* Ajoute une marge en haut */
+    }
+    
+    /* Styles pour le logo de Google */
+    #logo_google {
+        width: 272px; /* Largeur de l'image */
+        height: 92px; /* Hauteur de l'image */
+    }
+    
+    /* Styles pour le conteneur de la barre de recherche */
+    .search-container {
+        margin-top: 20px; /* Ajoute une marge en haut */
+        width: 100%; /* Prend toute la largeur disponible */
+        max-width: 584px; /* Largeur maximale */
+    }
+    
+    /* Styles pour la barre de recherche */
+    .search-bar {
+        width: 100%; /* Prend toute la largeur disponible */
+        padding: 10px 20px; /* Ajoute du padding */
+        font-size: 16px; /* Taille de la police */
+        border: 1px solid #dfe1e5; /* Bordure */
+        border-radius: 24px; /* Bordure arrondie */
+        box-shadow: none; /* Pas d'ombre */
+        outline: none; /* Supprime le contour par défaut */
+    }
+    
+    /* Styles pour le conteneur des boutons */
+    .buttons-container {
+        margin-top: 20px; /* Ajoute une marge en haut */
+    }
+    
+    /* Styles pour les boutons de recherche */
+    .search-button, .lucky-button {
+        background-color: #f8f9fa; /* Couleur de fond */
+        border: 1px solid #f8f9fa; /* Bordure */
+        border-radius: 4px; /* Bordure arrondie */
+        padding: 10px 20px; /* Ajoute du padding */
+        color: #5f6368; /* Couleur du texte */
+        font-size: 14px; /* Taille de la police */
+        margin: 5px; /* Ajoute une marge */
+        cursor: pointer; /* Change le curseur au survol */
+    }
+    
+    /* Styles pour les boutons au survol */
+    .search-button:hover, .lucky-button:hover {
+        border: 1px solid #dadce0; /* Change la bordure */
+        background-color: #f8f9fa; /* Couleur de fond */
+    }
+    
+    /* Styles pour le pied de page */
+    footer {
+        width: 100%; /* Prend toute la largeur de la page */
+        padding: 10px 0; /* Ajoute du padding en haut et en bas */
+        background-color: #f2f2f2; /* Couleur de fond */
+        display: flex; /* Utilise flexbox */
+        justify-content: space-between; /* Espace entre les éléments */
+        padding: 15px 50px; /* Ajoute du padding autour */
+        box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre en haut */
+    }
+    
+    /* Styles pour les conteneurs gauche et droit du pied de page */
+    footer .footer-left, footer .footer-right {
+        display: flex; /* Utilise flexbox */
+        gap: 20px; /* Espace entre les éléments */
+    }
+    
+    /* Styles pour les liens du pied de page */
+    footer a {
+        text-decoration: none; /* Supprime le soulignement */
+        color: #5f6368; /* Couleur du texte */
+        font-size: 14px; /* Taille de la police */
+    }
+    
+    /* Styles pour les liens au survol */
+    footer a:hover {
+        text-decoration: underline; /* Ajoute un soulignement */
+    }
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo-container {
+    margin-top: 50px;
+}
+
+#logo_google {
+    width: 272px;
+    height: 92px;
+}
+
+.search-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 584px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: none;
+    outline: none;
+}
+
+.buttons-container {
+    margin-top: 20px;
+}
+
+.search-button, .lucky-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #5f6368;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover, .lucky-button:hover {
+    border: 1px solid #dadce0;
+    background-color: #f8f9fa;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-left, footer .footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

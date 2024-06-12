@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Stock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion de Stock</h1>
+        <div id="notification" class="notification"></div>
+        <div class="form-container">
+            <input type="text" id="item" placeholder="Article">
+            <input type="number" id="quantity" placeholder="Quantité">
+            <button onclick="addItem()">Ajouter</button>
+        </div>
+        <input type="text" id="search" placeholder="Rechercher un article..." onkeyup="searchItems()">
+        <ul id="stock-list"></ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
