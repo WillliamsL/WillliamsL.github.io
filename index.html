@@ -4,85 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Développeur Web</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background"></div>
-    <header>
-        <div class="header-content">
-            <h1>lauvergne williams</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos de moi</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#cv">Mon CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <p>Bonjour, je suis Williams Lauvergne alias Will, un développeur web passionné avec une expérience en HTML, CSS, JavaScript, PHP, React, etc... Je continu de me former sur d'autres technologies comme React, Angular et NodeJS. En quête de trouver l'entreprise qui me donnera ma chance de prouver mes compétences en ma motivation d'exercer ce métier incroyable !!!</p>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <h2>Projets</h2>
-            <div class="projects">
-                <div class="project-item">
-                    <h3>Projet 1</h3>
-                    <p>Description du projet 1.</p>
-                    <a href="/projets/Projet - Page accueil google/index.html">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <h3>Projet 2</h3>
-                    <p>Description du projet 2.</p>
-                    <a href="/projets/Projet - Gestion de stock/index.html">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <h3>Projet 3</h3>
-                    <p>Description du projet 3.</p>
-                    <a href="/projets/Projet - New era hat/index.html">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <h3>Projet 4</h3>
-                    <p>Description du projet 4.</p>
-                    <a href="/projets/Projet - Gestion de stock/index.html">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <h3>Projet 5</h3>
-                    <p>Description du projet 5.</p>
-                    <a href="/projets/Projet - Gestion de stock/index.html">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <h3>Projet 6</h3>
-                    <p>Description du projet 6.</p>
-                    <a href="/projets/Projet - Gestion de stock/index.html">Voir le projet</a>
-                </div>
+    <div class="container">
+        <header>
+            <div class="logo">W</div>
+            <nav class="links">
+                <a href="mailto:votre-email@gmail.com">Email</a>
+                <a href="https://github.com/WillliamsL" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/izznjznvgsidkcnj/" target="_blank">LinkedIn</a>
+                <a href="./lauvergne williams cv.pdf" class="cv-link">Mon CV</a>
+            </nav>
+        </header>
+        <main class="main-container">
+            <div class="left-column">
+                <section id="about" class="about-section">
+                    <h2>Bienvenue</h2>
+                    <p>Je m'appelle Williams Lauvergne, je suis un développeur web basé à Metz. Je me suis lancé dans le développement web en septembre 2022 à l'aide d'une formation de reconversion professionnelle qui a duré un an. Ensuite, j'ai dû reprendre une activité professionnelle, mais pas en tant que développeur, car je n'estimais pas être encore prêt à exercer ce métier, n'ayant pas assez de compétences. Je me suis ainsi formé en autodidacte en parallèle de mon activité professionnelle (OpenClassrooms, tutoriels, projets personnels, etc.) pour désormais être prêt et me lancer dans cette nouvelle carrière professionnelle.</p>
+                </section>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 [Votre Nom]. Tous droits réservés.</p>
-        </div>
-    </footer>
+            <div class="right-column">
+                <section id="projects" class="projects-section">
+                    <h2>Projets</h2>
+                    <ul>
+                        <li><a href="./projets/Projet - Nitescence Capillaire/Nitescence Capillaire/index.html">Nitescence Capillaire</a></li>
+                        <li><a href="./projets/Projet - pendu/index.html">Pendu</a></li>
+                        <li><a href="./projets/Projet - pong/dist/index.html">Pong</a></li>
+                        <li><a href="./projets/Projet - TicTacToe/index.html">TicTacToe</a></li>
+                        <li><a href="./projets/Projet - New era hat/index.html">New Era Hats</a></li>
+                        <li><a href="./projets/Projet - Gestion de stock/index.html">Gestion de stock</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="cv-section" id="cv">
+                <h2>Mon CV</h2>
+                <iframe src="cv.pdf" width="100%" height="500px"></iframe>
+                <a href="cv.pdf" download="Williams_Lauvergne_CV.pdf" class="download-btn">Télécharger le CV</a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; willliamsl.github.io</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
